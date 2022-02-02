@@ -1,0 +1,76 @@
+.bb h1{
+    color: blue;
+    text-align: center;
+}
+.bb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+}
+.links{
+    height: 5rem;
+    padding-top: 2rem;
+    background-color: aquamarine;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    
+}
+.list a{
+    text-decoration: none;
+}
+.list li{
+    margin-right: 1rem;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    align-items:center;   
+}
+.box{
+    width: 6rem;
+    height: 6rem;
+    background-color: cornflowerblue;
+    margin-top: 2rem;
+}
+.box1{
+    animation: anim 2s ease-in-out;
+    animation-iteration-count: 2;
+}
+@keyframes anim {
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box2{
+    animation: anim2 2s ease-in-out;
+    animation-timing-function: 2;
+    background: linear-gradient(orange, red);
+}
+@keyframes anim2{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+form input, button, textarea{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.nav-wrapper{
+    background-color: blue;
+}
+.contact-box{
+    display: flex;
+}
